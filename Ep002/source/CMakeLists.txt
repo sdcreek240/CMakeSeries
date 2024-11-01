@@ -9,3 +9,4 @@ add_executable(HelloAppBinary main.cpp)
 
 #Pass special flags to use c++20
 target_compile_features(HelloAppBinary PRIVATE cxx_std_20)
+target_include_directories(HelloAppBinary PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
