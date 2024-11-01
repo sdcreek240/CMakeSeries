@@ -1,9 +1,11 @@
 #include <iostream>
-using namespace std;
+#include "dog.h"
+#include "operations.h"
 
 int main(){
 
-    cout << "Ek is n nar" << endl;
-
+    Dog dog1("Flitzy");
+    dog1.print_info();
+    
     return 0;
-};
+}

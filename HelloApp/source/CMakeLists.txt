@@ -4,8 +4,7 @@ project(HelloApp
         DESCRIPTION "The 2nd leading Hello World App"
         LANGUAGES CXX)
 
-        add_executable(HelloBinary main.cpp
-                        src/doog.cpp src/operations.cpp)
-
+#Target
+add_executable(HelloBinary main.cpp src/dog.cpp src/operations.cpp)
 target_compile_features(HelloBinary PRIVATE cxx_std_20)
 target_include_directories(HelloBinary PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
